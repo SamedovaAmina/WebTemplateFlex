@@ -1,0 +1,96 @@
+@import 'vars';
+.btn{
+    border: 1px solid transparent;
+    padding: 8px 18px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: .7s;
+}
+.btn-orange{
+    background-color: $themeClr ;
+    border: 1px solid $themeClr;
+}
+.btn-transp{
+    background-color: transparent ;
+    border: 1px solid #fff;
+}
+.btn-orange:hover{
+    background-color: transparent ;
+    border: 1px solid #fff;
+}
+.btn-transp:hover{
+    background-color: $themeClr ;
+    border: 1px solid $themeClr;
+}
+.btn-darkFont:hover{
+    background-color: transparent ;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    color:rgba(0, 0, 0, 0.281) ;
+}
+.back-transp{
+    width: 100%;
+    background-color: #e43e217c;
+}
+.right{
+    background-color: #e43e2185;
+}
+.up{
+    width: 36px;
+    height: 36px;
+    background: #e43e2169;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: .5s;
+}
+.up::before{
+    content: "\f077";
+    font-family: 'icomoon';
+    position: absolute;
+}
+.up:hover{
+    background-color: $themeClr;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        top: 38px;
+        width: 200px;
+        transition: .5s;
+        li{
+            padding: 10px 15px;
+            border: 1px solid $secClr ;
+            background-color: #32353c;
+            transition: .5s;
+        }
+        li:hover{
+            background-color: $themeClr;
+        }
+    }
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 1px 0px 5px #000;
+}
+.menu-drop{
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    display: none;
+}
+.menu-drop:hover{
+    cursor: pointer;
+}
