@@ -1,7 +1,7 @@
 # WebTemplateFlex
 Matin mallim webtemlateflex - responsive web flexbox and media
 ## Code Exsamples
-- sinple header structure
+- simple header structure
 ```sh
 <header id="top" class="site-top">
         <div class="container">
